@@ -5,6 +5,9 @@
 }
 
 body {
+  position: relative;
+  width: 100%;
+  margin: auto;
   font-size: 16px;
   background-color: rgba(250, 248, 120, 0.562);
 }
@@ -80,5 +83,5 @@ footer {
   top: 100vh;
   width: 100%;
   text-align: center;
+  font-size: smaller;
 }
-
