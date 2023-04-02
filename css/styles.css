@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -7,13 +9,13 @@ body {
   width: 100%;
   margin: auto;
   font-size: 16px;
-  background-color: beige;
+  background-color: rgba(250, 248, 120, 0.562);
 }
 
 header {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 2fr auto;
   grid-template-areas: 
     "logo titulo"
     "menu menu";
@@ -39,6 +41,41 @@ h1 {
   grid-row: 2 / 3;
   text-align: end;
   border: 1px solid;
+}
+
+main {
+  position: relative;
+}
+
+.container {
+  width: 85vmin;
+  position: absolute;
+  margin-top: 3%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 30px grey;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slides 10s infinite;
+}
+
+.wrapper > img {
+  width: 100%;
+}
+
+@keyframes slides {
+  0% {transform: translateX(0);}
+  20% {transform: translateX(0);}
+  40% {transform: translateX(-100%);}
+  60% {transform: translateX(-100%);}
+  80% {transform: translateX(-200%);}
+  98% {transform: translateX(-200%);}
+  100% {transform: translateX(0);}
 }
 
 footer {
