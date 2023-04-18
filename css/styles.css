@@ -57,22 +57,21 @@ h3 {
 }
 
 @media (max-width: 400px){
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
   .navbar a {
     padding: 2rem 0;
     width: 100%;
     justify-self: center;
     border: 1px solid;
   }
-  .navbar {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
   .container {
     display: none;
   }
 }
-
 
 main {
   position: relative;
