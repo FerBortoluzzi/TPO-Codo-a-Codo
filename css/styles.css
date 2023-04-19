@@ -10,7 +10,10 @@ html {
 }
 
 body {
-  background-color: beige;
+  background-color: rgba(245, 245, 245, 0.662);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -48,25 +51,48 @@ h3 {
 }
 
 @media (max-width: 770px){
+  header {
+    background-color: rgba(0, 255, 255, 0.582);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "logo" 
+    "menu";
+  }
+  .logo-header {
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+  }
   .navbar {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 @media (max-width: 400px){
-  .navbar a {
-    padding: 2rem 0;
-    width: 100%;
-    justify-self: center;
-    border: 1px solid;
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "logo" "menu";
+    background-color: white;
   }
   .navbar {
     display: grid;
-    grid-template-columns: 1fr;
     padding: 0;
+    gap: 0.5rem;
+    justify-content: stretch;
   }
-  .container {
-    display: none;
+  .navbar a {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.779);
+    padding-block: 2rem;
+  }
+  .logo-header {
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
   }
 }
 
@@ -74,40 +100,9 @@ main {
   position: relative;
 }
 
-/* .container {
-  width: 85vmin;
-  position: absolute;
-  margin-top: 3%;
-  left: 50%;
-  border-radius: 10px;
-  box-shadow: 0 0 30px grey;
-  transform: translate(-50%, 0);
-  overflow: hidden;
-} */
-
-.wrapper {
-  width: 100%;
-  display: flex;
-  animation: slides 10s infinite;
-}
-
-.wrapper > img {
-  width: 100%;
-}
-
-@keyframes slides {
-  0% {transform: translateX(0);}
-  20% {transform: translateX(0);}
-  40% {transform: translateX(-100%);}
-  60% {transform: translateX(-100%);}
-  80% {transform: translateX(-200%);}
-  98% {transform: translateX(-200%);}
-  100% {transform: translateX(0);}
-}
 
 footer {
-  position: absolute;
-  top: 100vh;
+  margin-top: auto;
   width: 100%;
   text-align: center;
   font-size: smaller;
