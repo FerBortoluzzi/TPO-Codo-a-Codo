@@ -96,10 +96,24 @@ h3 {
   }
 }
 
-main {
+.grid-container {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  grid-template-rows: repeat(2, auto);
+  gap: 3rem;
+  padding: 2rem;
+  justify-content: space-around;
 }
 
+.grid-item {
+  text-align: center;
+  border: 1px solid;
+}
+
+.grid-item > img {
+  width: 100%;
+}
 
 footer {
   margin-top: auto;
