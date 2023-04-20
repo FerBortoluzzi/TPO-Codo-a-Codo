@@ -22,13 +22,20 @@ header {
   grid-template-rows: auto auto;
   grid-template-areas: 
     "logo titulo"
-    "menu menu";
+    "logo menu";
   background-color: aquamarine;
  }
  
 .logo-header {
   grid-area: logo;
-  margin: 0.2rem 0 0 0.5rem;
+  margin: 0 0 0 0.6rem;
+  padding: 0.2rem;
+  border: 1px solid;
+}
+
+.logo-header > a {
+  display: flex;
+  text-decoration: none;
 }
 
 h3 {
