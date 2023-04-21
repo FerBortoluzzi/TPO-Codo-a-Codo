@@ -117,6 +117,13 @@ h3 {
   background-color: #ddd;
 }
 
+.video-home {
+  position: absolute;
+  margin: 0 0 0 0;
+  opacity: 0.8;
+  z-index: -100;
+}
+
 main {
   padding: 1rem 2rem;
 }
@@ -166,7 +173,7 @@ footer {
   .navbar a {
     text-align: center;
     width: 100%;
-    background-color: rgba(0, 255, 255, 0.779);
+    background-color: rgba(0, 255, 255, 0.148);
     padding-block: 0.2rem;
     border-bottom: 1px solid;
   }
@@ -177,6 +184,9 @@ footer {
   }
   .grid-container {
     grid-template-columns: 70%;
+  }
+  .video-home {
+    display: none;
   }
 
 }
