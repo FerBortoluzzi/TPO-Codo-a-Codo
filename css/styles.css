@@ -28,19 +28,26 @@ header {
   grid-template-areas: 
     "logo titulo"
     "logo menu";
-  background-color: aquamarine;
+  background-color: rgba(127, 255, 212, 0.445);
+  font-family: 'Playfair Display', serif;
  }
  
 .logo-header {
   grid-area: logo;
   margin: 0 0 0 0.6rem;
   padding: 0.2rem;
-  border: 1px solid;
 }
 
 .logo-header > a {
   display: flex;
   text-decoration: none;
+  place-items: center;
+}
+
+.logo-header > a > span {
+  padding-left: 0.5rem;
+  font-size: 1.6rem;
+  color: rgb(0, 0, 29);
 }
 
 h3 {
@@ -119,7 +126,7 @@ footer {
 
 @media (max-width: 770px){ /*para tablets*/
   header {
-    background-color: rgba(0, 255, 255, 0.582);
+    background-color: rgba(127, 255, 212, 0.445);
     grid-template-columns: 1fr;
     grid-template-areas: 
     "logo" 
@@ -127,7 +134,7 @@ footer {
   }
   .logo-header {
     display: block;
-    margin: 1rem auto;
+    margin: 0.3rem auto;
     width: fit-content;
   }
   .navbar {
@@ -142,7 +149,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas: "logo" "menu";
-    background-color: white;
+    background-color: rgba(127, 255, 212, 0.445);
   }
   .navbar {
     display: grid;
