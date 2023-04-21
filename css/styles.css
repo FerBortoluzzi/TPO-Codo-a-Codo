@@ -16,6 +16,11 @@ body {
   flex-direction: column;
 }
 
+body a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 10fr;
@@ -57,58 +62,12 @@ h3 {
   padding-inline-start: 1rem;
 }
 
-@media (max-width: 770px){
-  header {
-    background-color: rgba(0, 255, 255, 0.582);
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "logo" 
-    "menu";
-  }
-  .logo-header {
-    display: block;
-    margin: 1rem auto;
-    width: fit-content;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-@media (max-width: 400px){
-  header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: "logo" "menu";
-    background-color: white;
-  }
-  .navbar {
-    display: grid;
-    padding: 0;
-    gap: 0.5rem;
-    justify-content: stretch;
-  }
-  .navbar a {
-    text-align: center;
-    width: 100%;
-    background-color: rgba(0, 255, 255, 0.779);
-    padding-block: 2rem;
-  }
-  .logo-header {
-    display: block;
-    margin: 1rem auto;
-    width: fit-content;
-  }
-}
-
 .grid-container {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 20%);
   grid-template-rows: repeat(2, auto);
-  gap: 3rem;
+  gap: 2rem;
   padding: 2rem;
   justify-content: space-around;
 }
@@ -130,7 +89,6 @@ h3 {
 }
 
 .product-page {
-  text-decoration: none;
   padding-inline-start: 1rem;
 }
 
@@ -142,3 +100,54 @@ footer {
   font-size: smaller;
 }
 
+@media (max-width: 770px){ /*para tablets*/
+  header {
+    background-color: rgba(0, 255, 255, 0.582);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "logo" 
+    "menu";
+  }
+  .logo-header {
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 400px){ /*para telefonos moviles*/
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "logo" "menu";
+    background-color: white;
+  }
+  .navbar {
+    display: grid;
+    padding: 0;
+    justify-content: stretch;
+    border: 1px solid;
+    border-block-end: 0;
+  }
+  .navbar a {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.779);
+    padding-block: 0.2rem;
+    border-bottom: 1px solid;
+  }
+  .logo-header {
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+  }
+  .grid-container {
+    grid-template-columns: 70%;
+  }
+
+}
