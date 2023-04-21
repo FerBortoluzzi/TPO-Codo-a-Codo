@@ -122,6 +122,19 @@ h3 {
   width: 100%;
 }
 
+.product-pager {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.product-page {
+  text-decoration: none;
+  padding-inline-start: 1rem;
+}
+
+
 footer {
   margin-top: auto;
   width: 100%;
