@@ -113,8 +113,13 @@ h3 {
   border: 1px solid #4CAF50;
 }
 
-.product-pager a:hover:not(.active) {background-color: #ddd;}
+.product-pager a:hover:not(.active) {
+  background-color: #ddd;
+}
 
+main {
+  padding: 1rem 2rem;
+}
 
 footer {
   margin-top: auto;
