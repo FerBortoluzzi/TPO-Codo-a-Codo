@@ -192,17 +192,18 @@ main {
   left: 0;
   background-color: #11111188;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 1.2rem;
   transition: 0.8s;
 }
 
 .sidebar a {
-  padding: 8px 8px 8px 32px;
+  padding: 1.8rem 1.8rem 1.8rem 1.6rem;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.3rem;
   color: #adacac;
   display: block;
   transition: 0.3s;
+
 }
 
 .sidebar a:hover {
@@ -212,23 +213,24 @@ main {
 .sidebar .closeSidebarBtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  right: 0;
+  padding: 0 1rem;
+  font-size: 2rem;
 }
 
 #videoBtn {
-  width: 60px;
-  font-size: 12x;
-  padding: 5px;
+  width: fit-content;
+  font-size: 0.7rem;
+  padding: 0.3rem;
   border: none;
   background: #000;
   color: #fff;
   cursor: pointer;
   position: absolute;
-  bottom: 1vh;
-  left: 1vw;
+  bottom: 2vh;
+  left: 1.5vw;
   opacity: 0.6;
+  border-radius: 10%;
 }
 
 #videoBtn:hover {
