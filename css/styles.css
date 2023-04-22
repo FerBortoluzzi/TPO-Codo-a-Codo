@@ -198,9 +198,6 @@ footer {
 }
 
 @media (max-width: 770px){ /*para tablets*/
-  body {
-    transform: rotate(90deg);
-  }
   header {
     background-color: rgba(127, 255, 212, 0.445);
     grid-template-columns: 1fr;
@@ -221,7 +218,9 @@ footer {
 
 @media (max-width: 400px){ /*para telefonos moviles*/
   body {
-    transform: rotate(0deg);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
   }
   header {
     display: grid;
@@ -232,13 +231,16 @@ footer {
   }
   .navbar {
     display: grid;
+    grid-area: menu;
     padding: 0;
     justify-content: stretch;
     border: 1px solid;
     border-block-end: 0;
   }
   .navbar a {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: rgba(0, 255, 255, 0.148);
     padding-block: 0.2rem;
@@ -248,6 +250,7 @@ footer {
     display: block;
     margin: 1rem auto;
     width: fit-content;
+    grid-area: logo;
   }
   .grid-container {
     grid-template-columns: 70%;
