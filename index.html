@@ -10,12 +10,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Home</title>
 </head>
 
 <body class="body-home">
-  <video width="100%" autoplay loop muted class="video-home">
+  <video width="100%" autoplay loop muted id="video-home">
     <source src="./multimedia/pexels-cottonbro-studio-5822551-1920x1080-50fps.mp4" type="video/mp4">
     <source src="./multimedia/pexels-cottonbro-studio-5822551-1920x1080-50fps.ogg" type="video/ogg">
     Tu browser no soporta video
@@ -43,10 +46,12 @@
     <h3 class="phrase1">Otoño</h3>
     <h3 class="phrase2">Invierno</h3>
   </main>
-
+  
+  <button id="videoBtn" onclick="pauseVideo()">pausar</button>
   <footer>
     <small>TPO Grupo 10 Codo a Codo - Derechos Reservados 2023</small>
   </footer>
 </body>
 
+<script src="./js/scripts.js"></script>
 </html>
