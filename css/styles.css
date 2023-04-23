@@ -238,6 +238,26 @@ main {
   color: black;
 }
 
+.main-nosotros {
+  width: 100%;
+  padding: 2rem 5.5rem;
+}
+
+.img-nosotros-container {
+  width: 30vw;
+  float: left;
+  padding: 0 2rem 2rem 0;
+}
+
+.img-nosotros {
+  width: 100%;
+}
+
+.nosotros {
+  width: 80vw;
+  text-align: justify;
+}
+
 footer {
   margin-top: auto;
   width: 100%;
@@ -305,5 +325,16 @@ footer {
   }
   #video-home, #videoBtn {
     display: none;
+  }
+  .img-nosotros-container .img-nosotros {
+    display: none;
+  }
+  .main-nosotros {
+    padding: 0.8rem;
+    width: 100%;
+  }
+  .nosotros {
+    width: 100%;
+    text-align: justify;
   }
 }
