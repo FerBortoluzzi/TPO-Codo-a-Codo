@@ -265,8 +265,6 @@ footer {
   font-size: smaller;
 }
 
-
-
 img.boton-whatsapp {
   background-color: white;
   display: block !important;
@@ -276,23 +274,29 @@ img.boton-whatsapp {
   right: 20px;
   cursor: pointer;
   border-radius:100px !important;
-  }
+}
 
-  img.boton-whatsapp:hover{
-      border-radius:100px !important;
-      -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
-      -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-      box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-      transition-duration: 1s;
-  }
-
-
-
- 
-  
+img.boton-whatsapp:hover{
+    border-radius:100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    transition-duration: 1s;
+}
 
 
-/*Si agregan estilos, agreguen aqui arriba. Que las @media queries queden al ultimo, por favor*/  
+
+
+
+
+
+
+
+
+
+
+
+/*Esto dejenlo al final, si agregan estilos agreguen aqui arriba=====================*/
 @media (max-width: 770px){ /*para tablets*/
   header {
     background-color: rgba(127, 255, 212, 0.445);
