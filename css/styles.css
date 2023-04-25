@@ -265,6 +265,34 @@ footer {
   font-size: smaller;
 }
 
+
+
+img.boton-whatsapp {
+  background-color: white;
+  display: block !important;
+  position:fixed;
+  z-index: 9999999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius:100px !important;
+  }
+
+  img.boton-whatsapp:hover{
+      border-radius:100px !important;
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+      -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+      box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+      transition-duration: 1s;
+  }
+
+
+
+ 
+  
+
+
+/*Si agregan estilos, agreguen aqui arriba. Que las @media queries queden al ultimo, por favor*/  
 @media (max-width: 770px){ /*para tablets*/
   header {
     background-color: rgba(127, 255, 212, 0.445);
@@ -338,23 +366,3 @@ footer {
     text-align: justify;
   }
 }
-
-  
-img.boton-whatsapp {
-  background-color: white;
-  display: block !important;
-  position:fixed;
-  z-index: 9999999;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  border-radius:100px !important;
-  }
-  img.boton-whatsapp:hover{
-      border-radius:100px !important;
-      -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
-      -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-      box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-      transition-duration: 1s;
-      
-      } 
