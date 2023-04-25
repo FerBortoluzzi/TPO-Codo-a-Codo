@@ -258,13 +258,6 @@ main {
   text-align: justify;
 }
 
-footer {
-  margin-top: auto;
-  width: 100%;
-  text-align: center;
-  font-size: smaller;
-}
-
 img.boton-whatsapp {
   background-color: white;
   display: block !important;
@@ -284,10 +277,36 @@ img.boton-whatsapp:hover{
   transition-duration: 1s;
 }
 
+.btn-volver {
+  display: block;
+  font-size: large;
+  font-weight: bold;
+  padding-inline: 0.5rem;
+  width: fit-content ;
+  cursor: pointer;
+}
 
+.btn-volver-bottom {
+  margin-top: auto;
+}
 
+footer {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+}
  
   
+
+
+
+
+
+
+
+
+
 
 
 /*Si agregan estilos, agreguen aqui arriba. Que las @media queries queden al ultimo, por favor*/  
@@ -370,3 +389,5 @@ img.boton-whatsapp:hover{
     display: none;
   }
 }
+/*Agregar estilos arriba de las @media queries, por favor*/
+
