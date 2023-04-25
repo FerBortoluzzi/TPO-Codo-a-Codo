@@ -277,11 +277,11 @@ img.boton-whatsapp {
 }
 
 img.boton-whatsapp:hover{
-    border-radius:100px !important;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
-    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-    transition-duration: 1s;
+  border-radius:100px !important;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+  -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+  box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+  transition-duration: 1s;
 }
 
 
@@ -289,7 +289,7 @@ img.boton-whatsapp:hover{
  
   
 
-
+/*Agregar estilos arriba*/
 /*Si agregan estilos, agreguen aqui arriba. Que las @media queries queden al ultimo, por favor*/  
 @media (max-width: 770px){ /*para tablets*/
   header {
