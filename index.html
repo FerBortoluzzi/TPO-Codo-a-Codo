@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./multimedia/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Home</title>
+</head>
+
+<body class="body-home">
+  <video width="100%" autoplay loop muted id="video-home">
+    <source src="./multimedia/pexels-cottonbro-studio-5822551-1920x1080-50fps.mp4" type="video/mp4">
+    <source src="./multimedia/pexels-cottonbro-studio-5822551-1920x1080-50fps.ogg" type="video/ogg">
+    Tu browser no soporta video
+  </video>
+
+  <header>
+    <div class="logo-header">
+      <a href="./index.html" >
+        <img
+          src="./multimedia/CaClogo.png"
+          alt="logo de codo a codo"
+          width="70vw"/>
+        <span>Clothing</span>
+      </a>
+    </div>
+    <nav class="navbar">
+      <a href="./index.html">Home</a>
+      <a href="./nosotros.html">Nosotros</a>
+      <a href="./productos1.html">Productos</a>
+      <a href="./contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <span class="hamburguer" onclick="openSidebar()" style="font-size: 2rem;">&equiv;</span>
+    <sidebar id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closeSidebarBtn" onclick="closeSidebar()">&times;</a>
+      <a href="./index.html">Home</a>
+      <a href="./nosotros.html">Nosotros</a>
+      <a href="./productos1.html">Productos</a>
+      <a href="./contacto.html">Contacto</a>
+    </sidebar>
+
+    <h3 class="phrase1">Otoño</h3>
+    <h3 class="phrase2">Invierno</h3>
+  </main>
+  
+  <button id="videoBtn" onclick="pauseVideo()">pausar</button>
+  <footer>
+    <small>TPO Grupo 10 Codo a Codo - Derechos Reservados 2023</small>
+  </footer>
+</body>
+
+<script src="./js/scripts.js"></script>
+</html>
