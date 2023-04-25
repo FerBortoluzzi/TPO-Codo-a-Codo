@@ -289,7 +289,7 @@ img.boton-whatsapp {
  
   
 
-/*Agregar estilos arriba*/
+
 /*Si agregan estilos, agreguen aqui arriba. Que las @media queries queden al ultimo, por favor*/  
 @media (max-width: 770px){ /*para tablets*/
   header {
