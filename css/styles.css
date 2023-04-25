@@ -265,8 +265,6 @@ footer {
   font-size: smaller;
 }
 
-
-
 img.boton-whatsapp {
   background-color: white;
   display: block !important;
@@ -291,7 +289,7 @@ img.boton-whatsapp {
  
   
 
-
+/*Agregar estilos arriba*/
 /*Si agregan estilos, agreguen aqui arriba. Que las @media queries queden al ultimo, por favor*/  
 @media (max-width: 770px){ /*para tablets*/
   header {
@@ -364,5 +362,11 @@ img.boton-whatsapp {
   .nosotros {
     width: 100%;
     text-align: justify;
+  }
+  .hamburguer {
+    display: none;
+  }
+  .sidebar {
+    display: none;
   }
 }
