@@ -80,10 +80,10 @@ h3 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 18vw);
-  grid-template-rows: repeat(2, 55vh);
-  gap: 3rem;
-  padding: 2rem;
+  grid-template-rows: repeat(1, 55vh);
+  gap: 2rem;
   justify-content: space-around;
+  align-items: center;
 }
 
 .grid-item {
