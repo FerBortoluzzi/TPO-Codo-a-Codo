@@ -78,17 +78,22 @@ h3 {
 }
 
 .grid-container {
-  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 20%);
-  grid-template-rows: repeat(2, auto);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 18vw);
+  grid-template-rows: repeat(2, 55vh);
+  gap: 3rem;
   padding: 2rem;
   justify-content: space-around;
 }
 
 .grid-item {
+  display: flex;
+  flex-flow: column nowrap;
   text-align: center;
+  justify-content: flex-start;
+  max-width: 18vw;
+  max-height: 55vh;
+  overflow: hidden;
   border: 1px solid;
 }
 
@@ -279,8 +284,18 @@ img.boton-whatsapp:hover{
 
 .main-articulos {
   width: 100%;
-  padding: 1rem 3rem;
   text-align: center;
+  padding: 0;
+}
+
+.seccion-articulo {
+  display: flex;
+  padding: 1rem 3rem;
+}
+
+.descripcion-prenda {
+  text-align: justify;
+  padding: 2rem;
 }
 
 .btn-volver {
