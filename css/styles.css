@@ -293,7 +293,16 @@ img.boton-whatsapp:hover{
   padding: 1rem 3rem;
 }
 
+.foto-container {
+  width: 40vw;
+}
+
+.foto-articulo {
+  width: 100%;
+}
+
 .descripcion-prenda {
+  width: 60vw;
   text-align: justify;
   padding: 2rem;
 }
