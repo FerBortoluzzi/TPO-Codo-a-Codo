@@ -98,11 +98,23 @@ h3 {
   max-height: 55vh;
   overflow: hidden;
   border: 1px solid;
+  box-shadow: 0 0 5px grey;
+  transition: 0.6s;
 }
 
 .grid-item > img {
   width: 100%;
+  transition: 0.6s;
 }
+
+.grid-item:hover {
+  border: 1px solid #adacac7e;
+}
+
+.grid-item > img:hover {
+  border: 1px solid #adacac7e;
+}
+
 
 .pager-container {
   text-align: center;
