@@ -15,7 +15,7 @@ function pauseVideo() {
 }
 
 function openSidebar() {
-  sidebar.style.width = "250px";
+  sidebar.style.width = "15vw";
 }
 
 function closeSidebar() {
