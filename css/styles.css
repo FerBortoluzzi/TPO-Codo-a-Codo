@@ -283,9 +283,28 @@ img.boton-whatsapp {
       box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
       transition-duration: 1s;
   }
-
-
-
+/*estilos nosotros*/
+.nosotros{ 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:large;
+}
+.nosotros h2{
+ color:#000;
+ font:bold ;
+}
+/*estilos icon-redes*/
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+ }
+.social-icono img {
+  height:44px;
+  width:44px ;
+}
  
   
 
