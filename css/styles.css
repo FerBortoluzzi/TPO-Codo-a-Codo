@@ -10,9 +10,9 @@ html {
 
 body {
   background-color: rgba(245, 245, 245, 0.662);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .body-home {
@@ -71,30 +71,50 @@ h3 {
   text-decoration: none;
   padding-inline: 1rem;
   text-align: center;
+  transition: 0.7s;
 }
 
 .navbar a:hover {
   background-color: rgba(127, 255, 212, 0.7);
+  color: rgb(4, 141, 95);
+  border-radius: 0.7rem 0.7rem 0 0;
 }
 
 .grid-container {
-  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 20%);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 18vw);
+  grid-template-rows: repeat(1, 55vh);
   gap: 2rem;
-  padding: 2rem;
   justify-content: space-around;
+  align-items: center;
 }
 
 .grid-item {
+  display: flex;
+  flex-flow: column nowrap;
   text-align: center;
+  justify-content: flex-start;
+  max-width: 18vw;
+  max-height: 55vh;
+  overflow: hidden;
   border: 1px solid;
+  box-shadow: 0 0 5px grey;
+  transition: 0.6s;
 }
 
 .grid-item > img {
   width: 100%;
+  transition: 0.6s;
 }
+
+.grid-item:hover {
+  border: 1px solid #adacac7e;
+}
+
+.grid-item > img:hover {
+  border: 1px solid #adacac7e;
+}
+
 
 .pager-container {
   text-align: center;
@@ -179,12 +199,11 @@ main {
 }
 
 .hamburguer:hover {
-  color: #ddd;
   font-weight: bold;
 }
 
 .sidebar {
-  height: 100vh;
+  height: 83vh;
   width: 0; 
   position: absolute;
   z-index: 1;
@@ -194,6 +213,7 @@ main {
   overflow-x: hidden;
   padding-top: 1.2rem;
   transition: 0.8s;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .sidebar a {
@@ -202,12 +222,13 @@ main {
   font-size: 1.3rem;
   color: #adacac;
   display: block;
-  transition: 0.3s;
+  transition: 0.6s;
 
 }
 
 .sidebar a:hover {
   color: #f1f1f1;
+  text-shadow: 0 0 1rem white;
 }
 
 .sidebar .closeSidebarBtn {
@@ -258,32 +279,25 @@ main {
   text-align: justify;
 }
 
-footer {
-  margin-top: auto;
-  width: 100%;
-  text-align: center;
-  font-size: smaller;
-}
-
 img.boton-whatsapp {
   background-color: white;
-  display: block !important;
+  display: block;
   position:fixed;
   z-index: 9999999;
   bottom: 20px;
   right: 20px;
   cursor: pointer;
   border-radius:100px !important;
-  }
+}
 
-  img.boton-whatsapp:hover{
-      border-radius:100px !important;
-      -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
-      -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-      box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-      transition-duration: 1s;
-      
-  }
+img.boton-whatsapp:hover{
+  border-radius:100px !important;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+  -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+  box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+  transition-duration: 1s;
+}
+
 /*estilos nosotros*/
 .nosotros{ 
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -312,8 +326,62 @@ img.boton-whatsapp {
   height:28px;
   width:28px; 
 }
+
+.main-articulos {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.seccion-articulo {
+  display: flex;
+  padding: 1rem 3rem;
+}
+
+.foto-container {
+  width: 40vw;
+}
+
+.foto-articulo {
+  width: 100%;
+}
+
+.descripcion-prenda {
+  width: 60vw;
+  text-align: justify;
+  padding: 2rem;
+}
+
+.btn-volver {
+  display: block;
+  font-size: large;
+  font-weight: bold;
+  padding-inline: 0.5rem;
+  width: fit-content ;
+  cursor: pointer;
+}
+
+.btn-volver-bottom {
+  margin-top: auto;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+}
  
   
+
+
+
+
+
+
+
+
+
 
 
 /*Si agregan estilos, agreguen aqui arriba. Que las @media queries queden al ultimo, por favor*/  
@@ -338,8 +406,11 @@ img.boton-whatsapp {
 
 @media (max-width: 400px){ /*para telefonos moviles*/
   body {
-    width: 100vw;
-    height: 100vh;
+    display: grid;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
   }
   header {
@@ -348,20 +419,23 @@ img.boton-whatsapp {
     grid-template-rows: auto 1fr;
     grid-template-areas: "logo" "menu";
     background-color: rgba(127, 255, 212, 0.445);
+    min-width: 100vw;
+    margin: 0;
   }
   .navbar {
     display: grid;
     grid-area: menu;
     padding: 0;
     justify-content: stretch;
+    font-size: 1rem;
     border: 1px solid;
     border-block-end: 0;
   }
   .navbar a {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     background-color: rgba(0, 255, 255, 0.148);
     padding-block: 0.2rem;
     border-bottom: 1px solid;
@@ -374,12 +448,16 @@ img.boton-whatsapp {
   }
   .grid-container {
     grid-template-columns: 70%;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
   }
-  #video-home, #videoBtn {
-    display: none;
-  }
-  .img-nosotros-container .img-nosotros {
-    display: none;
+  .grid-item {
+    min-width: 24vw;
+    max-height: 55vh;
   }
   .main-nosotros {
     padding: 0.8rem;
@@ -389,10 +467,12 @@ img.boton-whatsapp {
     width: 100%;
     text-align: justify;
   }
-  .hamburguer {
+  .img-nosotros-container .img-nosotros {
     display: none;
   }
-  .sidebar {
+  .hamburguer, .sidebar, footer, .phrase1,.phrase2, #video-home, #videoBtn, img.boton-whatsapp {
     display: none;
   }
 }
+/*Agregar estilos arriba de las @media queries, por favor*/
+

@@ -15,9 +15,38 @@ function pauseVideo() {
 }
 
 function openSidebar() {
-  sidebar.style.width = "250px";
+  sidebar.style.width = "15vw";
 }
 
 function closeSidebar() {
   sidebar.style.width = "0";
+}
+
+//Validacion para el formulario (nombre)
+function validateName(){
+  let nombre = document.form.name.value;
+  if (nombre == '' || nombre.length < 1) {
+    alert('Ingrese un Nombre valido');
+    return false;
+  }
+}
+
+//Validacion para el formulario (email)
+function validateEmail(){
+  let email = document.form.email.value;
+  let arroba = email.indexOf('@');
+  let punto = email.lastIndexOf('.');
+  if (arroba < 1 || punto < arroba + 2 || punto + 2 >= email.length) {
+    alert('Ingrese un Email valido');
+    return false;
+  }
+}
+
+//Validacion para el formulario (comentarios)
+function validateComments(){
+  let comentario = document.form.comments.value;
+  if (comentario == ''){
+    alert('No ha ingresado su comentario');
+    return false;
+  }
 }
