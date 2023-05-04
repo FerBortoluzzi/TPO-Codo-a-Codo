@@ -282,28 +282,35 @@ img.boton-whatsapp {
       -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
       box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
       transition-duration: 1s;
+      
   }
 /*estilos nosotros*/
 .nosotros{ 
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size:large;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
 }
 .nosotros h2{
  color:#000;
  font:bold ;
 }
-/*estilos icon-redes*/
-.social-media {
+
+ /*----------Iconos redes sociales------*/
+.botton-redes {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0;  
  }
-.social-icono img {
-  height:44px;
-  width:44px ;
+.social-icon img:hover {
+  transform: scale(1.7);
+  transition: all 1s ease-in-out ;
+}
+.social-icon img {
+  height:28px;
+  width:28px; 
 }
  
   
