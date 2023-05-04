@@ -10,9 +10,9 @@ html {
 
 body {
   background-color: rgba(245, 245, 245, 0.662);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .body-home {
@@ -281,7 +281,7 @@ main {
 
 img.boton-whatsapp {
   background-color: white;
-  display: block !important;
+  display: block;
   position:fixed;
   z-index: 9999999;
   bottom: 20px;
@@ -377,8 +377,11 @@ footer {
 
 @media (max-width: 400px){ /*para telefonos moviles*/
   body {
-    width: 100vw;
-    height: 100vh;
+    display: grid;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
   }
   header {
@@ -387,20 +390,23 @@ footer {
     grid-template-rows: auto 1fr;
     grid-template-areas: "logo" "menu";
     background-color: rgba(127, 255, 212, 0.445);
+    min-width: 100vw;
+    margin: 0;
   }
   .navbar {
     display: grid;
     grid-area: menu;
     padding: 0;
     justify-content: stretch;
+    font-size: 1rem;
     border: 1px solid;
     border-block-end: 0;
   }
   .navbar a {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     background-color: rgba(0, 255, 255, 0.148);
     padding-block: 0.2rem;
     border-bottom: 1px solid;
@@ -413,12 +419,16 @@ footer {
   }
   .grid-container {
     grid-template-columns: 70%;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
   }
-  #video-home, #videoBtn {
-    display: none;
-  }
-  .img-nosotros-container .img-nosotros {
-    display: none;
+  .grid-item {
+    min-width: 24vw;
+    max-height: 55vh;
   }
   .main-nosotros {
     padding: 0.8rem;
@@ -428,10 +438,10 @@ footer {
     width: 100%;
     text-align: justify;
   }
-  .hamburguer {
+  .img-nosotros-container .img-nosotros {
     display: none;
   }
-  .sidebar {
+  .hamburguer, .sidebar, footer, .phrase1,.phrase2, #video-home, #videoBtn, img.boton-whatsapp {
     display: none;
   }
 }
