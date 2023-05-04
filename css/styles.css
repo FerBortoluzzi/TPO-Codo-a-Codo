@@ -115,10 +115,9 @@ h3 {
   border: 1px solid #adacac7e;
 }
 
-
 .pager-container {
   text-align: center;
-  margin-block: 2rem;
+  margin-block: 1rem;
 }
 
 .product-pager {

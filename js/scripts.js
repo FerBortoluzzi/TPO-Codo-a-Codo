@@ -22,31 +22,24 @@ function closeSidebar() {
   sidebar.style.width = "0";
 }
 
-//Validacion para el formulario (nombre)
-function validateName(){
-  let nombre = document.form.name.value;
+//Validacion para el formulario
+function validateForm(){
+  let nombre = document.forms['contactForm']['name'].value;
   if (nombre == '' || nombre.length < 1) {
-    alert('Ingrese un Nombre valido');
+    alert('Ingrese un NOMBRE válido');
     return false;
   }
-}
-
-//Validacion para el formulario (email)
-function validateEmail(){
-  let email = document.form.email.value;
+  let email = document.forms['contactForm']['email'].value;
   let arroba = email.indexOf('@');
   let punto = email.lastIndexOf('.');
   if (arroba < 1 || punto < arroba + 2 || punto + 2 >= email.length) {
-    alert('Ingrese un Email valido');
+    alert('Ingrese un EMAIL válido');
     return false;
   }
-}
-
-//Validacion para el formulario (comentarios)
-function validateComments(){
-  let comentario = document.form.comments.value;
+  let comentario = document.forms['contactForm']['message'].value;
   if (comentario == ''){
     alert('No ha ingresado su comentario');
     return false;
   }
 }
+
