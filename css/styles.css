@@ -75,8 +75,8 @@ h3 {
 }
 
 .navbar a:hover {
-  background-color: rgba(127, 255, 212, 0.7);
-  color: rgb(4, 141, 95);
+  background-color: rgb(5, 252, 207);
+  color: white;
   border-radius: 0.7rem 0.7rem 0 0;
 }
 
@@ -316,10 +316,10 @@ img.boton-whatsapp:hover{
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 1.5rem 0;  
+  margin: 0.4rem 0;  
  }
 .social-icon img:hover {
-  transform: scale(1.7);
+  transform: scale(1.2);
   transition: all 1s ease-in-out ;
 }
 .social-icon img {
@@ -385,8 +385,9 @@ footer {
 
 
 /*Si agregan estilos, agreguen aqui arriba. Que las @media queries queden al ultimo, por favor*/  
-@media (max-width: 770px){ /*para tablets*/
+@media (max-width: 1024px){ /*para tablets*/
   header {
+    display: block;
     background-color: rgba(127, 255, 212, 0.445);
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -401,6 +402,18 @@ footer {
   .navbar {
     display: flex;
     justify-content: space-around;
+  }
+  #video-home {
+    display: block;
+    top: 11vh;
+    order: 1;
+  }
+  .hamburguer, #videoBtn {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -470,7 +483,7 @@ footer {
   .img-nosotros-container .img-nosotros {
     display: none;
   }
-  .hamburguer, .sidebar, footer, .phrase1,.phrase2, #video-home, #videoBtn, img.boton-whatsapp {
+  .hamburguer, .sidebar, .phrase1,.phrase2, #video-home, #videoBtn, img.boton-whatsapp {
     display: none;
   }
 }
