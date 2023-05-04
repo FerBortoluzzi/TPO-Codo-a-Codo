@@ -298,6 +298,35 @@ img.boton-whatsapp:hover{
   transition-duration: 1s;
 }
 
+/*estilos nosotros*/
+.nosotros{ 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+.nosotros h2{
+ color:#000;
+ font:bold ;
+}
+
+ /*----------Iconos redes sociales------*/
+.botton-redes {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;  
+ }
+.social-icon img:hover {
+  transform: scale(1.7);
+  transition: all 1s ease-in-out ;
+}
+.social-icon img {
+  height:28px;
+  width:28px; 
+}
+
 .main-articulos {
   width: 100%;
   text-align: center;
