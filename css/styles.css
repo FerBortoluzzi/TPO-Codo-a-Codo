@@ -251,6 +251,7 @@ main {
   left: 1.5vw;
   opacity: 0.6;
   border-radius: 10%;
+  z-index: 9;
 }
 
 #videoBtn:hover {
