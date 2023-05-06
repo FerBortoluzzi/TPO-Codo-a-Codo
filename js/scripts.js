@@ -24,6 +24,7 @@ function closeSidebar() {
 
 //Validacion para el formulario
 function validateForm(){
+  let formulario = document.forms['contactForm'];
   let nombre = document.forms['contactForm']['name'].value;
   if (nombre == '' || nombre.length < 1) {
     alert('Ingrese un NOMBRE válido');
@@ -40,6 +41,10 @@ function validateForm(){
   if (comentario == ''){
     alert('No ha ingresado su comentario');
     return false;
+  }
+  if (nombre && email && comentario){
+    formulario.submit();
+    formulario.reset();
   }
 }
 
