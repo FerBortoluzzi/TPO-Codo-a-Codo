@@ -365,6 +365,10 @@ img.boton-whatsapp:hover{
   margin-top: auto;
 }
 
+.texto-contacto {
+  text-align: center;
+}
+
 footer {
   margin-top: auto;
   width: 100%;
