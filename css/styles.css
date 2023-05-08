@@ -366,7 +366,13 @@ img.boton-whatsapp:hover{
 }
 
 .texto-contacto {
+  margin: -5vh 0 10vh 0;
   text-align: center;
+}
+
+.main-contact {
+  width: 70%;
+  margin: auto;
 }
 
 footer {
