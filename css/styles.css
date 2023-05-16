@@ -61,20 +61,20 @@ h3 {
   align-self: center;
 }
   
-.navbar {
+.navbar, .navbar-ct {
   grid-area: menu;
   text-align: end;
   padding-inline-end: 1rem;
 }
 
-.navbar a {
+.navbar a, .navbar-ct a {
   text-decoration: none;
   padding-inline: 1rem;
   text-align: center;
   transition: 0.7s;
 }
 
-.navbar a:hover {
+.navbar a:hover, .navbar-ct a:hover {
   background-color: rgb(5, 252, 207);
   color: white;
   border-radius: 0.7rem 0.7rem 0 0;
@@ -409,7 +409,7 @@ footer {
     margin: 0.3rem auto;
     width: fit-content;
   }
-  .navbar {
+  .navbar, .navbar-ct {
     display: flex;
     justify-content: space-around;
   }
@@ -445,7 +445,7 @@ footer {
     min-width: 100vw;
     margin: 0;
   }
-  .navbar {
+  .navbar, .navbar-ct {
     display: grid;
     grid-area: menu;
     padding: 0;
@@ -454,7 +454,7 @@ footer {
     border: 1px solid;
     border-block-end: 0;
   }
-  .navbar a {
+  .navbar a, .navbar-ct a {
     display: flex;
     flex-direction: column;
     justify-content: center;
