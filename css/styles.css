@@ -375,6 +375,14 @@ img.boton-whatsapp:hover{
   margin: auto;
 }
 
+#api_container {
+  text-align: left;
+  font-size: 0.7rem;
+  padding: 0 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
 footer {
   margin-top: auto;
   width: 100%;
