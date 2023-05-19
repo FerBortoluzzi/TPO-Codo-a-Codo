@@ -48,3 +48,19 @@ function validateForm(){
   }
 }
 
+
+//Consumo de API geolocalizacion
+const api_container = document.querySelector('#api_container');
+const options = {method: 'get'};
+try {
+  fetch('https://ipwho.is/', options)
+  .then(resp => resp.json())
+  .then(resp => {
+    let date = ' Fecha: ' + resp.timezone.current_time.replace('T', ', Hora Actual: ');
+    let data = 'Ud está en: ' + resp.city + ', ' + resp.country + ' ' + `<img style='width:20px' src='${resp.flag.img}'/>` + ' ' + date;
+    api_container.innerHTML = data;
+    console.log(resp)
+  })
+} catch (error) {
+  console.warn(error)
+}
