@@ -504,6 +504,9 @@ footer {
   .hamburguer, .sidebar, .phrase1,.phrase2, #video-home, #videoBtn, img.boton-whatsapp {
     display: none;
   }
+  #api_container {
+    display: none;
+  }
 }
 /*Agregar estilos arriba de las @media queries, por favor*/
 
