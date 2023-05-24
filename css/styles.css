@@ -75,8 +75,8 @@ h3 {
 }
 
 .navbar a:hover, .navbar-ct a:hover {
-  background-color: rgb(5, 252, 207);
-  color: white;
+  background-color: rgb(127, 255, 212);
+  color: rgba(0, 0, 0, 0.539);
   border-radius: 0.7rem 0.7rem 0 0;
 }
 
